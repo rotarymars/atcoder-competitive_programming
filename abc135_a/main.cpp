@@ -9,6 +9,9 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    
+    int a,b;
+    cin>>a>>b;
+    if((a+b)%2)cout<<"IMPOSSIBLE\n";
+    else cout<<(a+b)/2<<endl;
     return 0;
 }
