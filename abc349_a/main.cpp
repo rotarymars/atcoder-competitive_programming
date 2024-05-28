@@ -8,7 +8,7 @@ signed main()
     int n;
     cin>>n;
     int tmp=0;
-    for(;n;n--){
+    for(;n-1;n--){
         int temp;
         cin>>temp;
         tmp+=temp;
