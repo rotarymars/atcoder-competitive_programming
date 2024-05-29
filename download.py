@@ -43,12 +43,9 @@ def returnurl():
             return f"https://atcoder.jp/contests/{nowdirectory[0:(len(nowdirectory)-1-i)]}/tasks/{nowdirectory}"
 def savetotest(ar):
     pathtotest = "./test"
-    print(ar)
-    newlineencoding="\r\n"
+    newlineencoding="\n"
     if not os.path.exists(pathtotest):
         os.system("mkdir test")
-    if ar[0][len(ar[0])-2]=="\r":
-        newlineencoding="\n"
     for i in range(0,len(ar),2):
         with open(f"{pathtotest}/sample-{i//2}.in",mode="w",newline=newlineencoding) as f:
             f.write(ar[i])
