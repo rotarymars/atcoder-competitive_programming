@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else
@@ -9,9 +10,9 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    int n;
+    cin>>n;
+    vector<char>v{'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+    cout<<v[n/16]<<v[n%16]<<endl;
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else
@@ -9,9 +10,9 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    long double a,b;
+    cin>>a>>b;
+    long double c=b/a;
+    cout<<fixed<<setprecision(3)<<c<<endl;
     return 0;
 }

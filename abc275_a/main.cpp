@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else
@@ -9,9 +11,10 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    int n;
+    cin>>n;
+    vector<int>v(n);
+    for(int&i:v)cin>>i;
+    cout<<distance(v.begin(),max_element(v.begin(),v.end()))+1<<endl;
     return 0;
 }

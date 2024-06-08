@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import pathlib
 import os
 import re
+import sys
 LOGIN_URL = "https://atcoder.jp/login"
 def getsession():
     session = requests.session()
@@ -37,6 +38,9 @@ def getsession():
     else:
         return -1
 def returnurl():
+    args=sys.argv
+    if len(args)==2:
+        return args[1]
     nowdirectory=pathlib.Path(os.getcwd()).name
     for i in range(len(nowdirectory)):
         if nowdirectory[len(nowdirectory) - 1 - i] == "_":

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <math.h>
+#include <iomanip>
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else
@@ -9,9 +11,8 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    long double n;
+    cin>>n;
+    cout<<fixed<<setprecision(10)<<sqrt(n*(12800000.0+n))<<endl;
     return 0;
 }

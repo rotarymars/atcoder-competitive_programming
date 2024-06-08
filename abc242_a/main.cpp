@@ -9,9 +9,13 @@ signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    int a,b,c,x;
+    cin>>a>>b>>c>>x;
+    if(x<=a)cout<<1.0<<endl;
+    else if(x<=b){
+        long double res=c;
+        cout<<res/(b-a)<<endl;
+    }
+    else cout<<0.0<<endl;
     return 0;
 }

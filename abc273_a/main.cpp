@@ -5,13 +5,16 @@
 #define DP(x) ;
 #endif
 using namespace std;
+int f(int a){
+    if(a==0)return 1;
+    else return a*f(a-1);
+}
 signed main()
 {
     cin.tie(nullptr);
     ios_base::sync_with_stdio(false);
-    int n,m,x,t,d;
-    cin>>n>>m>>x>>t>>d;
-    if(m>=x)cout<<t<<endl;
-    else cout<<t-(x-m)*d<<endl;
+    int n;
+    cin>>n;
+    cout<<f(n)<<endl;
     return 0;
 }
