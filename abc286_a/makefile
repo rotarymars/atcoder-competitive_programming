@@ -9,6 +9,6 @@ debugall: $(DEBUG_BIN) $(SAMPLE)
 $(BIN): $(SRC)
 	g++ -std=gnu++23 -O2 -o $(BIN) $(SRC)
 $(DEBUG_BIN): $(SRC)
-	g++ -std=gnu++23 -O2 -D_DEBUG -o $(DEBUG_BIN) $(SRC)
+	g++ -std=gnu++23 -O2 -o -$(DEBUG_BIN) $(SRC)
 $(SAMPLE):
 	python ../download.py

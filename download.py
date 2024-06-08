@@ -64,7 +64,6 @@ def getsample(url,session):
         if i.string is None:
             continue
         sample.append(i.string)
-    sample = sample[0:len(sample)//2]
     return sample
 
 def main():
