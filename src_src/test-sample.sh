@@ -25,7 +25,7 @@ for IN_FILE in `ls ./test/*.in` ; do
         echo input:
         cat ${IN_FILE}
         echo output:
-        ${BIN} < ${IN_FILE} | cat
+        cat tmp.txt
         echo expected:
         cat ${OUT_FILE}
     else
