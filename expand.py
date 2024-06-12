@@ -12,7 +12,7 @@ for i in originalsource:
     i=i.rstrip()
 newsource=[]
 for i in originalsource:
-    res=re.match("#include.*<template(.*)>.*",i)
+    res=re.match("#include.*<template/(.*)>.*",i)
     if res:
         templatesource=[]
         with open(f"../template/{res.groups()[0]}",encoding="utf-8",newline="\n") as f:
