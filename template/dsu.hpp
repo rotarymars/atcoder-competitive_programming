@@ -1,8 +1,11 @@
+#include <vector>
+#include <map>
+#include <numeric>
 class DSU {
 private:
-  vector<int> parent;
+  std::vector<int> parent;
 public:
-  DSU(int n) : parent(n) { iota(parent.begin(), parent.end(), 0); };
+  DSU(int n) : parent(n) { std::iota(parent.begin(), parent.end(), 0); };
   int leader(int a) {
     int tmp = parent[a];
     while (tmp != parent[tmp]) {
@@ -17,17 +20,17 @@ public:
   void _LINK_LEADER() {
     for (int i = 0; i < parent.size(); i++) parent[i] = DSU::leader(i);
   }
-  vector<vector<int>> to_vector() {
-    map<int, int> m;
+  std::vector<std::vector<int>> to_vector() {
+    std::map<int, int> m;
     for (int i = 0; i < parent.size(); i++) m[DSU::leader(i)] = i;
     for (auto i = m.begin(); i != m.end(); i++) i->second = distance(m.begin(), i);
-    vector<vector<int>> ret(m.size());
+    std::vector<std::vector<int>> ret(m.size());
     for (int i = 0; i < parent.size(); i++) {
       ret[m[DSU::leader(i)]].push_back(i);
     }
     return ret;
   }
-  vector<int> parentcopy() {
+  std::vector<int> parentcopy() {
     return parent;
   }
 };

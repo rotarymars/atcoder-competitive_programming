@@ -1,18 +1,20 @@
+#include <vector>
+#include <bit>
 template <class S, S (*op)(S, S), S (*e)>
 class SEGMENTTREE {
 private:
   int _n, size, log;
-  vector<S> d;
+  std::vector<S> d;
   void update(int k) {
     d[k] = op(d[2 * k], d[2 * k + 1]);
     return;
   }
 public:
-  SEGMENTTREE(int n) : SEGMENTTREE(vector<S>(n, e())) {}
-  SEGMENTTREE(vector<S>& v) : _n(int(v.size())){
-    size = bit_ceil((unsigned int)_n);
-    log = countr_zero((unsigned int)size);
-    d = vector<S>(2 * size, e());
+  SEGMENTTREE(int n) : SEGMENTTREE(std::vector<S>(n, e())) {}
+  SEGMENTTREE(std::vector<S>& v) : _n(int(v.size())){
+    size = std::bit_ceil((unsigned int)_n);
+    log = std::countr_zero((unsigned int)size);
+    d = std::vector<S>(2 * size, e());
     for (int i = 0; i < _n; i++) d[size + i] = v[i];
     for (int i = size - 1; i >= 1; i--) update(i);
   }

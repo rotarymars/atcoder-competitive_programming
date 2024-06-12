@@ -1,8 +1,8 @@
 #include <vector>
-using namespace std;
+#include <utility>
 template <class T>
-vector<pair<T, T>> PRIME_FACTORIZE(T n) {
-  vector<pair<T, T>> result;
+std::vector<std::pair<T, T>> PRIME_FACTORIZE(T n) {
+  std::vector<std::pair<T, T>> result;
   for (T i = 2; i * i <= n; i++)
   {
     if (n % i != 0)
