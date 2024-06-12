@@ -17,6 +17,4 @@ def calculate_Vn_mod(N):
     S = S % MOD
     Vn_mod = (N * S) % MOD
     return Vn_mod
-
-# 例として、N = 2 の場合の余りを計算する
 print(calculate_Vn_mod(int(input())))
