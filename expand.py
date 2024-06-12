@@ -22,4 +22,3 @@ for i in originalsource:
         newsource.append(i)
 with open("./tmp.cpp",mode='w',encoding="utf-8",newline="\n") as f:
     f.writelines(newsource)
-os.system("cp ./tmp.cpp ./main.cpp")
