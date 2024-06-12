@@ -36,6 +36,7 @@ for IN_FILE in `ls ./test/*.in` ; do
 done
 echo ${accepted}/${total} are AC
 if [[ ${accepted} == ${total} ]]; then
+    python ../expand.py
     echo clipping source code
     cat $2 | clip
 fi
