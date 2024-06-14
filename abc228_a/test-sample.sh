@@ -16,7 +16,7 @@ for IN_FILE in `ls ./test/*.in` ; do
     fi
     ((total++))
     OUT_FILE=${IN_FILE/in/out}
-    ${BIN} < ${IN_FILE} >> tmp.txt
+    time ${BIN} < ${IN_FILE} >> tmp.txt
     diff ${OUT_FILE} tmp.txt --strip-trailing-cr
     rc=$?
     if [ ${rc} -ne 0 ] ; then
@@ -25,7 +25,7 @@ for IN_FILE in `ls ./test/*.in` ; do
         echo input:
         cat ${IN_FILE}
         echo output:
-        ${BIN} < ${IN_FILE} | cat
+        cat tmp.txt
         echo expected:
         cat ${OUT_FILE}
     else
@@ -36,7 +36,8 @@ for IN_FILE in `ls ./test/*.in` ; do
 done
 echo ${accepted}/${total} are AC
 if [[ ${accepted} == ${total} ]]; then
+    python ../expand.py
     echo clipping source code
-    cat $2 | clip
+    cat tmp.cpp | clip
 fi
 exit ${ec}
