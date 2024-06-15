@@ -1,6 +1,9 @@
+#ifndef __ROTARYMARS__BIGINT__
+#define __ROTARYMARS__BIGINT__ 1
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 class BIGINT{
     private:
     std::vector<signed char>v;
@@ -33,7 +36,7 @@ class BIGINT{
     }
     BIGINT operator+(BIGINT a){
         std::vector<signed char>retvec;
-       int _max_size=max(*this->v.size(),a.RET_VECTOR.size());
+       int _max_size=max(this->v.size(),a.RET_VECTOR().size());
         for(int i=0;i<n;i++){
             //start making from here.
             //make an BIGGER check, and check whether the answer becomes plus either minus.
@@ -47,3 +50,5 @@ std::ostream& operator<<(std::ostream& o, BIGINT b){
     }
     return o;
 }
+#else
+#endif

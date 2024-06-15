@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__DSU__
+#define __ROTARYMARS__DSU__ 1
 #include <algorithm>
 #include <cassert>
 #include <vector>
@@ -64,3 +66,5 @@ private:
   int _n;
   std::vector<int> parent_or_size;
 };
+#else
+#endif

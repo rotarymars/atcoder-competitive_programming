@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__ISPALINDROME__
+#define __ROTARYMARS__ISPALINDROME__
 #include <string>
 bool ISPALINDROME(std::string s) {
   for (int i = 0; i < s.size() / 2; i++)
@@ -10,3 +12,5 @@ bool ISPALINDROME(std::string s) {
   }
   return true;
 }
+#else
+#endif

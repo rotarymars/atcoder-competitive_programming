@@ -1,3 +1,4 @@
 *.exe
 username.txt
 password.txt
+*.gch

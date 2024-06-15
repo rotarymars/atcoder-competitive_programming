@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__PRIME_FACTORIZE__
+#define __ROTARYMARS__PRIME_FACTORIZE__
 #include <vector>
 #include <utility>
 template <class T>
@@ -24,3 +26,5 @@ std::vector<std::pair<T, T>> PRIME_FACTORIZE(T n) {
   SORT(result);
   return result;
 }
+#else
+#endif

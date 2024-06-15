@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__POWMOD__
+#define __ROTARYMARS__POWMOD__
 template <class T>
 T POWMOD(T a, T b, T c) {
   T ans = 1;
@@ -15,3 +17,5 @@ T POWMOD(T a, T b, T c) {
   }
   return ans;
 }
+#else
+#endif

@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__ENUM_DIVISORS__
+#define __ROTARYMARS__ENUM_DIVISORS__
 #include <vector>
 using namespace std;
 template<class T>
@@ -17,3 +19,5 @@ vector<T> ENUM_DIVISORS(T n) {
   sort(result.begin(),result.end());
   return result;
 }
+#else
+#endif

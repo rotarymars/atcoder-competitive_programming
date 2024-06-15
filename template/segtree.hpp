@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__SEGTREE__
+#define __ROTARYMARS__SEGTREE__ 1
 #include <vector>
 #include <bit>
 template <class S, S (*op)(S, S), S (*e)()>
@@ -93,3 +95,5 @@ public:
     return min_left(r, [](S x) {return f(x); });
   }
 };
+#else
+#endif

@@ -1,3 +1,5 @@
+#ifndef __ROTARYMARS__ISPRIME
+#define __ROTARYMARS__ISPRIME 1
 template<class T>
 bool ISPRIME(const T a) {
   if (a <= 1)
@@ -13,3 +15,5 @@ bool ISPRIME(const T a) {
   }
   return true;
 }
+#else
+#endif
