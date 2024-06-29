@@ -17,7 +17,7 @@ for IN_FILE in `ls ./test/*.in` ; do
     ((total++))
     OUT_FILE=${IN_FILE/in/out}
     ${BIN} < ${IN_FILE} >> tmp.txt
-    diff ${OUT_FILE} tmp.txt --strip-trailing-cr > output.txt
+    diff ${OUT_FILE} tmp.txt --strip-trailing-cr
     rc=$?
     if [ ${rc} -ne 0 ] ; then
         ec=1
