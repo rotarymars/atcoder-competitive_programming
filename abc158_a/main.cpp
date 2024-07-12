@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else
@@ -13,5 +14,5 @@ signed main()
     cin>>s;
     if(s=="AAA"||s=="BBB")cout<<"No\n";
     else cout<<"Yes\n";
-    return 0;
 }
+
