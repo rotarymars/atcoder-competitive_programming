@@ -1,4 +1,10 @@
 #include <iostream>
+:q
+:q
+:q
+:wq
+:wq
+:exit
 #ifdef _DEBUG
 #define DP(x) cout << #x << " = " << x << endl
 #else

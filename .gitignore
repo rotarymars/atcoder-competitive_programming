@@ -4,3 +4,4 @@ password.txt
 *.gch
 output.txt
 tmp.cpp
+*.out
