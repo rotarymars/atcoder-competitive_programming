@@ -2,7 +2,20 @@
 #define __ROTARYMARS__ARYSYSTEM__
 #include <vector>
 #include <algorithm>
-std::vector<int> CHANGEARYSYSTEM(int n, int k){
+template<class T>
+T KTOTEN(int a,int k){
+	int ret=0;
+	int now=1;
+	while(a>0){
+		ret+=(a%10)*now;
+		a/=10;
+		now*=k;
+	}
+	return ret;
+}
+
+
+std::vector<int> TENTOK(int n, int k){
     std::vector<int>ret;
     while(n>0){
         ret.push_back(n%k);

@@ -5,3 +5,4 @@ password.txt
 output.txt
 tmp.cpp
 *.out
+test/
