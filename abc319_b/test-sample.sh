@@ -38,8 +38,6 @@ echo ${accepted}/${total} are AC
 if [[ ${accepted} == ${total} ]]; then
     python ../expand.py
     echo clipping source code
-		clang-format tmp.cpp > a.cpp
-    cat a.cpp | clip
-		rm tmp.cpp
+    cat tmp.cpp | clip
 fi
 exit ${ec}
