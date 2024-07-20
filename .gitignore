@@ -6,3 +6,4 @@ output.txt
 tmp.cpp
 *.out
 test/
+*.o
