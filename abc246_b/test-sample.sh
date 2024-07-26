@@ -17,7 +17,7 @@ for IN_FILE in `ls ./test/*.in` ; do
     ((total++))
     OUT_FILE=${IN_FILE/in/out}
     ${BIN} < ${IN_FILE} >> tmp.txt
-    diff ${OUT_FILE} tmp.txt --strip-trailing-cr > /dev/null
+    diff ${OUT_FILE} tmp.txt --strip-trailing-cr > output.txt
     rc=$?
     if [ ${rc} -ne 0 ] ; then
         ec=1
@@ -38,8 +38,6 @@ echo ${accepted}/${total} are AC
 if [[ ${accepted} == ${total} ]]; then
     python ../expand.py
     echo clipping source code
-		clang-format tmp.cpp > a.cpp
-    cat a.cpp | clip
-		rm tmp.cpp
+    cat tmp.cpp | clip
 fi
 exit ${ec}
