@@ -14,5 +14,3 @@ $(SAMPLE):
 	python ../download.py
 pythontest: main.py $(SAMPLE)
 	bash ./test-sample.sh 'python main.py' main.py
-rubytest: main.rb $(SAMPLE)
-	bash ./test-sample.sh 'ruby main.rb' main.rb
