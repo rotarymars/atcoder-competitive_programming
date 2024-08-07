@@ -1,13 +1,11 @@
 SRC = ./main.cpp
 BIN = ./a.out
 DEBUG_BIN = ./debug.out
-SAMPLE = ./test/sample-1.in
+SAMPLE = ./test/sample-0.in
 all: $(BIN) $(SAMPLE)
-	python ../expand.py
-	clang-format tmp.cpp > a.cpp
-	oj t -t 10 && oj s --wait=0 --yes -l 5031 a.cpp
+	bash ./test-sample.sh $(BIN) $(SRC)
 debugall: $(DEBUG_BIN) $(SAMPLE)
-	oj t -t 10
+	bash ./test-sample.sh $(DEBUG_BIN) $(SRC)
 $(BIN): $(SRC)
 	clang++ -std=gnu++2b -O2 -I../ -o $(BIN) $(SRC)
 $(DEBUG_BIN): $(SRC)
@@ -15,6 +13,6 @@ $(DEBUG_BIN): $(SRC)
 $(SAMPLE):
 	python ../download.py
 pythontest: main.py $(SAMPLE)
-	oj t -t 10 -c 'python main.py' && oj s --wait=0 --yes  -l 5055 main.py
+	bash ./test-sample.sh 'python main.py' main.py
 rubytest: main.rb $(SAMPLE)
-	oj t -t 10 -c 'ruby main.rb' && oj s --wait=0 --yes  -l 5018 main.rb
+	bash ./test-sample.sh 'ruby main.rb' main.rb
