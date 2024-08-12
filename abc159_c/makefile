@@ -6,6 +6,10 @@ all: $(BIN) $(SAMPLE)
 	python ../expand.py
 	clang-format tmp.cpp > a.cpp
 	oj t -t 10 && oj s --wait=0 --yes -l 5031 a.cpp
+precisiontest: $(BIN) $(SAMPLE)
+	python ../expand.py
+	clang-format tmp.cpp > a.cpp
+	oj t -e 0.00001 -t 10 && oj s --wait=0 --yes -l 5031 a.cpp
 debugtest: $(DEBUG_BIN) $(SAMPLE)
 	oj t -c './debug.out' -t 10
 $(BIN): $(SRC)
