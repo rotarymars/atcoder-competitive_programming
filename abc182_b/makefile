@@ -6,7 +6,7 @@ all: $(BIN) $(SAMPLE)
 	python ../expand.py
 	clang-format tmp.cpp > a.cpp
 	oj t -t 10 && oj s --wait=0 --yes -l 5031 a.cpp
-debugtest: $(DEBUG_BIN) $(SAMPLE)
+debugall: $(DEBUG_BIN) $(SAMPLE)
 	oj t -c './debug.out' -t 10
 $(BIN): $(SRC)
 	clang++ -std=gnu++2b -O2 -I../ -o $(BIN) $(SRC)

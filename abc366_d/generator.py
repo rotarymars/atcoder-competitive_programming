@@ -1,5 +1,5 @@
 import random
-n=random.randint(100,1000)
+n=random.randint(0,1000)
 print(n)
 for _ in range(n**2):
     tmplist=[]
