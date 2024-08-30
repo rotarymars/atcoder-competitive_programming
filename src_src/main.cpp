@@ -21,9 +21,9 @@ signed main(){
   .++.o+++oo+:`             /dddhhh.   
        .+.o+oo:.          `oddhhhh+    
         \+.++o+o``-````.:ohdhhhhh+     
-         `:o+++ `ohhhhhhhhyo++os:
-           .o:`.syhhhhhhh/.oo++o`
-               /osyyyyyyo++ooo+++/
-                   ````` +oo+++o\:
-                          `oo++.
+         `:o+++ `ohhhhhhhhyo++os:      
+           .o:`.syhhhhhhh/.oo++o`      
+               /osyyyyyyo++ooo+++/     
+                   ````` +oo+++o\:     
+                          `oo++.       
 */

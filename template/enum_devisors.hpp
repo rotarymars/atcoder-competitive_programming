@@ -1,6 +1,7 @@
 #ifndef __ROTARYMARS__ENUM_DIVISORS__
 #define __ROTARYMARS__ENUM_DIVISORS__
 #include <vector>
+#include <algorithm>
 using namespace std;
 template<class T>
 vector<T> ENUM_DIVISORS(T n) {
