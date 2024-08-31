@@ -1,8 +1,19 @@
 #include <iostream>
+#include <string>
 using namespace std;
 signed main(){
 	cin.tie(nullptr);
 	ios_base::sync_with_stdio(false);
+	int n;
+	string s;
+	cin>>n>>s;
+	int ans=0,tmp=0;
+	for(int i=0;i<n;i++){
+		if(i>0&&s[i]==s[i-1])++tmp;
+		else tmp=0;
+		ans+=tmp;
+	}
+	cout<<ans<<endl;
 	return 0;
 }
 
