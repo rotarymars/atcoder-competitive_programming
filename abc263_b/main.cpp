@@ -1,31 +1,20 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
 using namespace std;
 signed main(){
-	cin.tie(nullptr);
-	ios_base::sync_with_stdio(false);
 	int n;
-	cin>>n;
-	vector<int>x(n),p(n);
-	for(int&i:x)cin>>i;
-	for(int&i:p)cin>>i;
-	vector<int>sum(n);
-	sum[0]=p[0];
-	for(int i=1;i<n;i++)sum[i]=sum[i-1]+p[i];
-	int q;
-	cin>>q;
-	for(;q;q--){
-		int l,r;
-		cin>>l>>r;
-		auto it=lower_bound(x.begin(),x.end(),l),itt=lower_bound(x.begin(),x.end(),r);
-		int big=(itt==x.end()?sum.back():(*itt>=r?sum[distance(x.begin(),prev(itt,1))]:sum[distance(x.begin(),itt)]),small=(it==x.begin()?0:(*it>=l?sum[distance(x.begin(),prev(it,1))]:sum[distance(x.begin(),it)]));
-		cout<<big-small<<'\n';
-	}
-	return 0;
+  cin>>n;
+  vector<int> a(n);
+  for(int i=1;i<n;i++){
+    cin>>a[i];
+    a[i]--;
+  }
+  vector<int> dp(n);
+  for(int i=1;i<n;i++){
+    dp[i]=dp[a[i]]+1;
+  }
+  cout<<dp[n-1]<<endl;
 }
-
-
 /*
 
                    N~                   

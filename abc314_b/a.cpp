@@ -1,5 +1,8 @@
+#include <limits.h>
+
 #include <algorithm>
 #include <iostream>
+#include <numeric>
 #include <vector>
 using namespace std;
 signed main() {
@@ -7,26 +10,43 @@ signed main() {
   ios_base::sync_with_stdio(false);
   int n;
   cin >> n;
-  vector<int> x(n), p(n);
-  for (int& i : x) cin >> i;
-  for (int& i : p) cin >> i;
-  vector<int> sum(n);
-  sum[0] = p[0];
-  for (int i = 1; i < n; i++) sum[i] = sum[i - 1] + p[i];
-  int q;
-  cin >> q;
-  for (; q; q--) {
-    int l, r;
-    cin >> l >> r;
-    auto it = lower_bound(x.begin(), x.end(), l),
-         itt = lower_bound(x.begin(), x.end(), r);
-    int big = (itt == x.end() ? sum.back() : sum[distance(x.begin(), itt)]),
-        small =
-            (it == x.begin() ? 0
-                             : (*it >= l ? sum[distance(x.begin(), prev(it, 1))]
-                                         : sum[distance(x.begin(), it)]));
-    cout << big - small << '\n';
+  vector<vector<int>> v(n);
+  for (int i = 0; i < n; i++) {
+    int c;
+    cin >> c;
+    for (int j = 0; j < c; j++) {
+      int tmp;
+      cin >> tmp;
+      v[i].push_back(tmp);
+    }
   }
+  int x;
+  cin >> x;
+  vector<vector<int>> anslist;
+  vector<int> indexlist;
+  for (int i = 0; i < n; i++) {
+    if (count(v[i].begin(), v[i].end(), x))
+      anslist.push_back(v[i]), indexlist.push_back(i + 1);
+  }
+  int minans = INT_MAX, ans = 0;
+  for (int i = 0; i < anslist.size(); i++)
+    minans = min(minans, (int)anslist[i].size());
+  for (int i = 0; i < anslist.size(); i++)
+    if (anslist[i].size() == minans) ++ans;
+  cout << ans << '\n';
+  bool firstprint = 1;
+  for (int i = 0; i < anslist.size(); i++) {
+    if (anslist[i].size() == minans) {
+      if (firstprint) {
+        firstprint = false;
+        goto label;
+      }
+      cout << ' ';
+    label:
+      cout << indexlist[i];
+    }
+  }
+  cout << endl;
   return 0;
 }
 
