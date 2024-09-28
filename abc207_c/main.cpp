@@ -1,26 +1,32 @@
 #include <iostream>
-#include <algorithm>
+#include <utility>
 #include <vector>
 using namespace std;
-#define int long long
 signed main(){
 	cin.tie(nullptr);
 	ios_base::sync_with_stdio(false);
 	int n;
 	cin>>n;
-	vector<int>x(n),p(n);
-	for(int&i:x)cin>>i;
-	for(int&i:p)cin>>i;
-	for(int i=1;i<n;i++)p[i]+=p[i-1];
-	int q;
-	cin>>q;
-	p.insert(p.begin(),0);
-	for(int i=0;i<q;++i){
-		int l,r;
-		cin>>l>>r;
-		int dist=distance(x.begin(),upper_bound(x.begin(),x.end(),r)),distt=distance(x.begin(),lower_bound(x.begin(),x.end(),l));
-		cout<<*next(p.begin(),dist)-*next(p.begin(),distt)<<'\n';
+	vector<pair<long double,long double>>v(n);
+	for(int i=0;i<n;i++){
+		long double t,l,r;
+		cin>>t>>l>>r;
+		if(t==1)
+			;
+		if(t==2)r-=0.3;
+		if(t==3)l+=0.3;
+		if(t==4)l+=0.3,r-=0.3;
+		v[i]=make_pair(l,r);
 	}
+	int ans=0;
+	for(int i=0;i<n;i++)for(int j=i+1;j<n;j++){
+		if(v[j].first<=v[i].second&&v[j].second>=v[i].first)++ans;
+#ifdef _DEBUG
+		if(v[j].first<=v[i].second&&v[j].second>=v[i].first)
+			cout<<v[i].first<<' '<<v[i].second<<' '<<v[j].first<<' '<<v[j].second<<endl;;
+#endif
+	}
+	cout<<ans<<endl;
 	return 0;
 }
 

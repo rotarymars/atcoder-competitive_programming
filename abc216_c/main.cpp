@@ -1,26 +1,18 @@
 #include <iostream>
-#include <algorithm>
-#include <vector>
+#include <string>
 using namespace std;
-#define int long long
 signed main(){
 	cin.tie(nullptr);
 	ios_base::sync_with_stdio(false);
 	int n;
 	cin>>n;
-	vector<int>x(n),p(n);
-	for(int&i:x)cin>>i;
-	for(int&i:p)cin>>i;
-	for(int i=1;i<n;i++)p[i]+=p[i-1];
-	int q;
-	cin>>q;
-	p.insert(p.begin(),0);
-	for(int i=0;i<q;++i){
-		int l,r;
-		cin>>l>>r;
-		int dist=distance(x.begin(),upper_bound(x.begin(),x.end(),r)),distt=distance(x.begin(),lower_bound(x.begin(),x.end(),l));
-		cout<<*next(p.begin(),dist)-*next(p.begin(),distt)<<'\n';
+	string s(60,'B');
+	for(long long i=59;i>=0;--i){
+		if(n&(1ll<<i)){
+			s.insert(s.size()-i,"A");
+		}
 	}
+	cout<<s<<endl;
 	return 0;
 }
 

@@ -1,27 +1,23 @@
-#include <algorithm>
 #include <iostream>
-#include <vector>
+#include <regex>
+#include <string>
 using namespace std;
-#define int long long
 signed main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
-  int n;
-  cin >> n;
-  vector<int> x(n), p(n);
-  for (int& i : x) cin >> i;
-  for (int& i : p) cin >> i;
-  for (int i = 1; i < n; i++) p[i] += p[i - 1];
-  int q;
-  cin >> q;
-  p.insert(p.begin(), 0);
-  for (int i = 0; i < q; ++i) {
-    int l, r;
-    cin >> l >> r;
-    int dist = distance(x.begin(), upper_bound(x.begin(), x.end(), r)),
-        distt = distance(x.begin(), lower_bound(x.begin(), x.end(), l));
-    cout << *next(p.begin(), dist) - *next(p.begin(), distt) << '\n';
-  }
+  int a, b;
+  cin >> a >> b;
+  string match = "";
+  for (int i = 0; i < a; i++) match += "[0-9]";
+  match += '-';
+  for (int i = 0; i < b; i++) match += "[0-9]";
+  regex r(match);
+  string s;
+  cin >> s;
+  if (regex_match(s, r))
+    cout << "Yes" << endl;
+  else
+    cout << "No" << endl;
   return 0;
 }
 
