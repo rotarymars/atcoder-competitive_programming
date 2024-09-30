@@ -1,0 +1,53 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+// LUOGU_RID: 179013295
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 1e5 + 5;
+int n, m, x[N], y[N], a[N], p[N];
+long long t;
+int main() {
+  scanf("%d%d%lld", &n, &m, &t);
+  for (int i = 2; i <= n; i++) scanf("%d", a + i);
+  for (int i = 1; i <= m; i++) scanf("%d%d", x + i, y + i), p[x[i]] += y[i];
+  for (int i = 1; i <= n; i++) {
+    t -= a[i];
+    if (t <= 0) {
+      printf("No\n");
+      return 0;
+    }
+    t += p[i];
+  }
+  printf("Yes\n");
+  return 0;
+}
+
+/*
+
+                   N~
+   MMMMMMMMMMMMMMM+O$M MMMMMMMMMMMMMMM+
+  :M~~~~~~~~~~~~OMOOON$M,~~~~~~~~~~~~IM
+  :M$77~~~~~~~77IMOOOOOM7I7~~~~~~~~~I8M
+     M7~~~~~~~IMOOOOOOOOM8 ~~~~~~~:IM
+     M7~~~~~~~IMOOOOOO8M +~~~~~~~IMM
+     M7~~~~~~~IMOOOOOM. ~~~~~~~DIM
+     M7~~~~~~~IMOOOMM :~~~~~~~IMM
+     M7~~~~~~~IMOOM :~~~~~~~NIM$N
+    MM7~~~~~~~IMMO ~~~~~~~~IMMOOO$M
+   7+M7~~~~~~~IM O~~~~~~~ONMOOOOOOZ$.
+ M+OOM7~~~~~~~I ~~~~~~~:IMOOOOOOOOOO$M
+ M8OOM7~~~~~~~?~~~~~~~7MMOOOOOOOOOOODM
+  88NM7~~~~~~~~~~~~~MMMOOOOOOOOOOOOD+
+    MM7~~~~~~~~~~~~M~~MOOOOOOOOOODM
+     M7~~~~~~~~~~=IMOOOOOOOOOOONN
+     M7~~~~~~~~~I?~~~MM~~~MD+~~M8~~~$
+     M7~~~~~~~IZMD~~ZOO:~~~~~~~~~~~~.
+     M7~~~~~~IMDO8~~NOM~~NDM~~M ~~~M
+     M7~~~~ZNMOOM~~8OO:~?DM8~~  M~~?
+     M7~~~IM.:ND:~~MOM~~M M~~M N~~O~
+     MMMMMM    MMMMMODNM+ ?III +III
+                 M8ODM
+                  M8O
+
+*/
