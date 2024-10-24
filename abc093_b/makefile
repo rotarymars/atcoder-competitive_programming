@@ -16,9 +16,9 @@ precisiontest: $(BIN) $(SAMPLE)
 debugtest: $(DEBUG_BIN) $(SAMPLE)
 	oj t -c './debug.out' -t 10
 $(BIN): $(SRC)
-	clang++ -std=gnu++2b -g -I../ -o $(BIN) $(SRC)
+	clang++ -std=gnu++2b -O2 -I../ -o $(BIN) $(SRC)
 $(DEBUG_BIN): $(SRC)
-	clang++ -std=gnu++2b -g -I../ -D_DEBUG -o $(DEBUG_BIN) $(SRC)
+	clang++ -std=gnu++2b -O2 -I../ -D_DEBUG -o $(DEBUG_BIN) $(SRC)
 $(SAMPLE):
 	python ../download.py
 pythontest: main.py $(SAMPLE)
