@@ -1,4 +1,0 @@
--I../
--I../template/
--std=c++2b
-
