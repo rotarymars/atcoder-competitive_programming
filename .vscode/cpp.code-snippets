@@ -28,7 +28,7 @@
 		"scope": "cpp",
 		"prefix": "vcin",
 		"body": [
-			"for(${1:int}&${2:i}:${3:v})cin>>${2};"
+			"for(auto&${1:i}:${2:v})cin>>${1};"
 		]
 	},
 	"if": {
@@ -36,6 +36,22 @@
 		"prefix": "if",
 		"body": [
 			"if(${1}){",
+			"  ${0}",
+			"}"
+		]
+	},
+	"include": {
+		"scope": "cpp",
+		"prefix": "#in",
+		"body": [
+			"#include <${1}>"
+		]
+	},
+	"reference loop": {
+		"scope": "cpp",
+		"prefix": "forr",
+		"body": [
+			"for(auto&i:${1:v}){",
 			"  ${0}",
 			"}"
 		]
