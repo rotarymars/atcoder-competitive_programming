@@ -55,5 +55,14 @@
 			"  ${0}",
 			"}"
 		]
+	},
+	"while loop": {
+		"scope": "cpp",
+		"prefix": "while",
+		"body": [
+			"while(${1}){",
+			"  ${0}",
+			"}"
+		]
 	}
 }
