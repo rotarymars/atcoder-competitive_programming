@@ -51,7 +51,7 @@
 		"scope": "cpp",
 		"prefix": "forr",
 		"body": [
-			"for(auto&i:${1:v}){",
+			"for(auto&${1:i}:${2:v}){",
 			"  ${0}",
 			"}"
 		]
