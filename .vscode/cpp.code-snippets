@@ -40,6 +40,15 @@
 			"}"
 		]
 	},
+	"else": {
+		"scope": "cpp",
+		"prefix": "else",
+		"body": [
+			"else{",
+			"  ${0}",
+			"}"
+		]
+	},
 	"include": {
 		"scope": "cpp",
 		"prefix": "#in",
