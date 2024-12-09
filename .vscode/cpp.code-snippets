@@ -49,6 +49,24 @@
 			"}"
 		]
 	},
+	"like if": {
+		"scope": "cpp",
+		"prefix": "like",
+		"body": [
+			"if(${1})[[likely]]{",
+			"  ${0}",
+			"}"
+		]
+	},
+	"unlike if": {
+		"scope": "cpp",
+		"prefix": "unlike",
+		"body": [
+			"if(${1})[[unlikely]]{",
+			"  ${0}",
+			"}"
+		]
+	},
 	"else": {
 		"scope": "cpp",
 		"prefix": "else",
