@@ -1,1 +1,1 @@
-oj t -e 0.001 -d tests && acc s -s -- --guess-cxx-compiler clang -y --wait 0
+oj t -e 0.001 -d tests --tle 3 && acc s -s -- --guess-cxx-compiler clang -y --wait 0
