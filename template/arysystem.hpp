@@ -15,8 +15,11 @@ T KTOTEN(int a,int k){
 }
 
 
-std::vector<int> TENTOK(int n, int k){
+std::vector<int> TENTOK(long long n, long long k){
     std::vector<int>ret;
+    if(n==0){
+      return std::vector<int>(1,0);
+    }
     while(n>0){
         ret.push_back(n%k);
         n/=k;
