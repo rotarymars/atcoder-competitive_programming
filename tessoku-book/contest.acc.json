@@ -9,7 +9,12 @@
       "id": "tessoku_book_a",
       "label": "A01",
       "title": "The First Problem",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a",
+      "directory": {
+        "path": "a01",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_b",
@@ -103,7 +108,12 @@
       "id": "tessoku_book_o",
       "label": "A15",
       "title": "Compression",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_o"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_o",
+      "directory": {
+        "path": "a15",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_p",
