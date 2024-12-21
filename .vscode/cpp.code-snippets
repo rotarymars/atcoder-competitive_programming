@@ -107,5 +107,12 @@
 		"body": [
 			"vector<${1:int}>${2:v}(${3:n});"
 		]
+	},
+	"iterator all": {
+		"scope": "cpp",
+		"prefix": "itall",
+		"body": [
+			"${1:v}.begin(),${1}.end()"
+		]
 	}
 }
