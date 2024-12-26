@@ -9,12 +9,7 @@
       "id": "tessoku_book_a",
       "label": "A01",
       "title": "The First Problem",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a",
-      "directory": {
-        "path": "a01",
-        "testdir": "tests",
-        "submit": "main.cpp"
-      }
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a"
     },
     {
       "id": "tessoku_book_b",
@@ -119,7 +114,12 @@
       "id": "tessoku_book_p",
       "label": "A16",
       "title": "Dungeon 1（※初版第 1 刷の B22 も同じ問題です）",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_p"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_p",
+      "directory": {
+        "path": "a16",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_q",
@@ -561,7 +561,12 @@
       "id": "dp_a",
       "label": "B16",
       "title": "Frog 1",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/dp_a"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/dp_a",
+      "directory": {
+        "path": "b16",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_cp",
