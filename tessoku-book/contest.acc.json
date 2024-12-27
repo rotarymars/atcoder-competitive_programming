@@ -125,13 +125,23 @@
       "id": "tessoku_book_q",
       "label": "A17",
       "title": "Dungeon 2",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_q"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_q",
+      "directory": {
+        "path": "a17",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_r",
       "label": "A18",
       "title": "Subset Sum",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_r"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_r",
+      "directory": {
+        "path": "a18",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_s",
@@ -572,13 +582,23 @@
       "id": "tessoku_book_cp",
       "label": "B17",
       "title": "Frog 1 with Restoration",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cp"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cp",
+      "directory": {
+        "path": "b17",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_cq",
       "label": "B18",
       "title": "Subset Sum with Restoration",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cq"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cq",
+      "directory": {
+        "path": "b18",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_cr",
