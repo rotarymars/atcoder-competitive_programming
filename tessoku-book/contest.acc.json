@@ -625,7 +625,12 @@
       "id": "tessoku_book_cs",
       "label": "B20",
       "title": "Edit Distance",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cs"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cs",
+      "directory": {
+        "path": "b20",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_ct",
