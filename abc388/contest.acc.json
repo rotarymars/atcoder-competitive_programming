@@ -31,12 +31,7 @@
       "id": "abc388_c",
       "label": "C",
       "title": "Various Kagamimochi",
-      "url": "https://atcoder.jp/contests/abc388/tasks/abc388_c",
-      "directory": {
-        "path": "c",
-        "testdir": "tests",
-        "submit": "main.cpp"
-      }
+      "url": "https://atcoder.jp/contests/abc388/tasks/abc388_c"
     },
     {
       "id": "abc388_d",
