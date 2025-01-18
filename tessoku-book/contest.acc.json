@@ -169,7 +169,12 @@
       "id": "tessoku_book_u",
       "label": "A21",
       "title": "Block Game",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_u"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_u",
+      "directory": {
+        "path": "a21",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_v",
