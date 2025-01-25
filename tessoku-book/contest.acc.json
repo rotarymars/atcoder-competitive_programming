@@ -180,7 +180,12 @@
       "id": "tessoku_book_v",
       "label": "A22",
       "title": "Sugoroku",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_v"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_v",
+      "directory": {
+        "path": "a22",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_w",
