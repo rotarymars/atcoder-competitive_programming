@@ -14,7 +14,8 @@
     "streambuf": "cpp",
     "tuple": "cpp",
     "utility": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "ostream": "cpp"
   },
   "C_Cpp.suggestSnippets": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
