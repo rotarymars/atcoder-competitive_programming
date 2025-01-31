@@ -7,3 +7,4 @@ tmp.cpp
 *.out
 test/
 *.o
+.direnv
