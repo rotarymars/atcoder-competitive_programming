@@ -1,4 +1,4 @@
-#!/home/rotarymars/projects/personal/kyopuro/.direnv/python-3.12.6/bin/python
+#!/home/rotarymars/projects/atcoder-competitive_programming/.direnv/python-3.12.6/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

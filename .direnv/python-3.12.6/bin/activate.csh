@@ -9,7 +9,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/rotarymars/projects/personal/kyopuro/.direnv/python-3.12.6"
+setenv VIRTUAL_ENV "/home/rotarymars/projects/atcoder-competitive_programming/.direnv/python-3.12.6"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
