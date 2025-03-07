@@ -6,7 +6,7 @@ all: $(BIN)
 	./do
 
 $(BIN): $(SRC)
-	$(CC) -std=c++2b -Wall -Wextra $(SRC) -o $(BIN)
+	$(CC) -std=c++2b -g -Wall -Wextra $(SRC) -o $(BIN)
 
 precision: $(BIN)
 	./precision

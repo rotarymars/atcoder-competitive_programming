@@ -25,5 +25,16 @@
         "cwd": "${fileDirname}"
       }
     },
-  ],
+    {
+      "label": "just build",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "a.out"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      }
+    }
+  ]
 }
