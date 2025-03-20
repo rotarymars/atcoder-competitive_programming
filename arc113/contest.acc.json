@@ -9,7 +9,12 @@
       "id": "arc113_a",
       "label": "A",
       "title": "A*B*C",
-      "url": "https://atcoder.jp/contests/arc113/tasks/arc113_a"
+      "url": "https://atcoder.jp/contests/arc113/tasks/arc113_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "arc113_b",
