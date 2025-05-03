@@ -1,2 +1,0 @@
-yapf
-git+https://github.com/rotarymars/oj.git
