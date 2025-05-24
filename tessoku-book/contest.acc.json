@@ -208,7 +208,12 @@
       "id": "tessoku_book_y",
       "label": "A25",
       "title": "Number of Routes",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_y"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_y",
+      "directory": {
+        "path": "a25",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "tessoku_book_z",
