@@ -31,7 +31,12 @@
       "id": "abc399_c",
       "label": "C",
       "title": "Make it Forest",
-      "url": "https://atcoder.jp/contests/abc399/tasks/abc399_c"
+      "url": "https://atcoder.jp/contests/abc399/tasks/abc399_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc399_d",
