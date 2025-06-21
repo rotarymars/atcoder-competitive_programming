@@ -20,13 +20,23 @@
       "id": "abc403_b",
       "label": "B",
       "title": "Four Hidden",
-      "url": "https://atcoder.jp/contests/abc403/tasks/abc403_b"
+      "url": "https://atcoder.jp/contests/abc403/tasks/abc403_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc403_c",
       "label": "C",
       "title": "403 Forbidden",
-      "url": "https://atcoder.jp/contests/abc403/tasks/abc403_c"
+      "url": "https://atcoder.jp/contests/abc403/tasks/abc403_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc403_d",
