@@ -31,7 +31,12 @@
       "id": "abc405_c",
       "label": "C",
       "title": "Sum of Product",
-      "url": "https://atcoder.jp/contests/abc405/tasks/abc405_c"
+      "url": "https://atcoder.jp/contests/abc405/tasks/abc405_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.cpp"
+      }
     },
     {
       "id": "abc405_d",
