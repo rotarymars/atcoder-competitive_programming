@@ -60,6 +60,38 @@ struct FastIO {
         }
     }
 
+    bool read(int &i){
+        return readInt(i);
+    }
+
+    bool read(long &l){
+        return readInt(l);
+    }
+
+    bool read(long long &i){
+        return readInt(i);
+    }
+
+    bool read(double &d){
+        return readDouble(d);
+    }
+
+    bool read(float &f){
+        return readDouble(f);
+    }
+
+    bool read(long double &ld){
+        return readDouble(ld);
+    }
+
+    bool read(char &c){
+        return readChar(c);
+    }
+
+    bool read(std::string &s){
+        return readString(s);
+    }
+
     template<class T>
     bool readInt(T &out) {
         int c;
@@ -75,7 +107,8 @@ struct FastIO {
         return true;
     }
 
-    bool readDouble(double &out) {
+    template<class T>
+    bool readDouble(T &out) {
         int c;
         if (!skipSpaces(c)) return false;
 
