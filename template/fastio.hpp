@@ -6,8 +6,8 @@
 #include <cctype>
 
 struct FastIO {
-    static constexpr size_t IN_BUF_SIZE  = 1 << 10;
-    static constexpr size_t OUT_BUF_SIZE = 1 << 10;
+    static constexpr size_t IN_BUF_SIZE  = 1 << 20;
+    static constexpr size_t OUT_BUF_SIZE = 1 << 20;
 
     FILE* in;
     char  inbuf[IN_BUF_SIZE];
