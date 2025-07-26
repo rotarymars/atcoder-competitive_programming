@@ -25,7 +25,7 @@ struct FastIO {
             outbuf = new char[OUT_BUF_SIZE];
           }
 
-    ~FastIO() { flush(); }
+    ~FastIO() { flush(); delete[] inbuf; delete[] outbuf; }
 
 
     inline int gc() {
@@ -281,7 +281,7 @@ struct FastIO {
     template<class T>
     void writeDouble(T x, int precision = 10, char end = '\0') {
         char tmp[128];
-        int n = std::snprintf(tmp, sizeof(tmp), "%.*f", precision, x);
+        int n = std::snprintf(tmp, sizeof(tmp), "%.*Lf", precision, x);
         for (int i = 0; i < n; ++i) pc(tmp[i]);
         if (end) pc(end);
     }
@@ -306,5 +306,16 @@ struct FastIO {
         write(' ');
         write(p.second);
         if(end)pc(end);
+    }
+
+    template<typename... Args>
+    void write(Args&&... args) {
+        (write(std::forward<Args>(args)), ...);
+    }
+
+    // Variadic read function
+    template<typename... Args>
+    bool read(Args&... args) {
+        return (... && read(args));
     }
 };
