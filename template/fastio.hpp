@@ -98,6 +98,11 @@ struct FastIO {
         return readVec(v);
     }
 
+    template<class T, class U>
+    bool read(std::pair<T, U> &p) {
+        return readPair(p);
+    }
+
     template<class T>
     bool readInt(T &out) {
         int c;
@@ -201,6 +206,11 @@ struct FastIO {
         return true;
     }
 
+    template<class T, class U>
+    bool readPair(std::pair<T, U> &p) {
+        return read(p.first) && read(p.second);
+    }
+
     void write(char c) { writeChar(c);}
 
     void write(int i) { writeInt(i); }
@@ -222,6 +232,11 @@ struct FastIO {
     template<class T>
     void write(const std::vector<T> &v) {
         writeVec(v);
+    }
+
+    template<class T, class U>
+    void write(const std::pair<T, U> &p) {
+        writePair(p);
     }
 
     void writeChar(char c) { pc(c); }
@@ -279,6 +294,14 @@ struct FastIO {
             write(*it);
             if(it!=v.end()-1)write(' ');
         }
+        if(end)pc(end);
+    }
+
+    template<class T, class U>
+    void writePair(const std::pair<T, U> &p, char end = '\0') {
+        write(p.first);
+        write(' ');
+        write(p.second);
         if(end)pc(end);
     }
 };
