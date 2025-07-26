@@ -58,7 +58,9 @@
     "sstream": "cpp",
     "stdexcept": "cpp",
     "typeinfo": "cpp",
-    "cuchar": "cpp"
+    "cuchar": "cpp",
+    "valarray": "cpp",
+    "fstream": "cpp"
   },
   "C_Cpp.suggestSnippets": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
