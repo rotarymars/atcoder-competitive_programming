@@ -11,16 +11,19 @@ struct FastIO {
     static constexpr size_t OUT_BUF_SIZE = 1 << 20;
 
     FILE* in;
-    char  inbuf[IN_BUF_SIZE];
+    char* inbuf;
     size_t in_idx, in_len;
 
     FILE* out;
-    char  outbuf[OUT_BUF_SIZE];
+    char* outbuf;
     size_t out_idx;
 
     FastIO(FILE* _in = stdin, FILE* _out = stdout)
         : in(_in), in_idx(0), in_len(0),
-          out(_out), out_idx(0) {}
+          out(_out), out_idx(0) {
+            inbuf = new char[IN_BUF_SIZE];
+            outbuf = new char[OUT_BUF_SIZE];
+          }
 
     ~FastIO() { flush(); }
 
