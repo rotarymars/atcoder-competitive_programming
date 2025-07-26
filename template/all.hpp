@@ -1,0 +1,16 @@
+#include <template/arysystem.hpp>
+#include <template/combinations.hpp>
+#include <template/debugprint.hpp>
+#include <template/edit_distance.hpp>
+#include <template/enum_divisors.hpp>
+#include <template/gcd_lcm.hpp>
+#include <template/ioutility.hpp>
+#include <template/inverse_element.hpp>
+#include <template/ispalindrome.hpp>
+#include <template/isprime.hpp>
+#include <template/powmod.hpp>
+#include <template/prime_factorize.hpp>
+#include <template/rud.hpp>
+#include <template/sha256.hpp>
+#include <template/unique_erase.hpp>
+#include <atcoder/all>
