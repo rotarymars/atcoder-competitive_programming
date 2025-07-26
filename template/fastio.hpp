@@ -167,7 +167,7 @@ struct FastIO {
         do {
             s.push_back(static_cast<char>(c));
             c = gc();
-        } while (c > ' ');
+        } while (!isspace(c));
         return true;
     }
 
@@ -186,6 +186,24 @@ struct FastIO {
     }
 
     bool readChar(char &c) { return readCharRaw(c); }
+
+    void write(char c) { writeChar(c);}
+
+    void write(int i) { writeInt(i); }
+
+    void write(long l) { writeInt(l); }
+
+    void write(long long i) { writeInt(i); }
+
+    void write(double d) { writeDouble(d); }
+
+    void write(float f) { writeDouble(f); }
+
+    void write(long double ld) { writeDouble(ld); }
+
+    void write(const std::string &s) { writeString(s); }
+
+    void write(const char *s) { writeString(s); }
 
     void writeChar(char c) { pc(c); }
 
@@ -223,7 +241,8 @@ struct FastIO {
         if (end) pc(end);
     }
 
-    void writeDouble(double x, int precision = 10, char end = '\0') {
+    template<class T>
+    void writeDouble(T x, int precision = 10, char end = '\0') {
         char tmp[128];
         int n = std::snprintf(tmp, sizeof(tmp), "%.*f", precision, x);
         for (int i = 0; i < n; ++i) pc(tmp[i]);
