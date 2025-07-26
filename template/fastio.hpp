@@ -4,6 +4,7 @@
 #include <type_traits>
 #include <cmath>
 #include <cctype>
+#include <vector>
 
 struct FastIO {
     static constexpr size_t IN_BUF_SIZE  = 1 << 20;
@@ -90,6 +91,11 @@ struct FastIO {
 
     bool read(std::string &s){
         return readString(s);
+    }
+
+    template<class T>
+    bool read(std::vector<T> &v){
+        return readVec(v);
     }
 
     template<class T>
@@ -187,6 +193,14 @@ struct FastIO {
 
     bool readChar(char &c) { return readCharRaw(c); }
 
+    template<class T>
+    bool readVec(std::vector<T> &v) {
+        for(T &x:v){
+            if(!read(x))return false;
+        }
+        return true;
+    }
+
     void write(char c) { writeChar(c);}
 
     void write(int i) { writeInt(i); }
@@ -204,6 +218,11 @@ struct FastIO {
     void write(const std::string &s) { writeString(s); }
 
     void write(const char *s) { writeString(s); }
+
+    template<class T>
+    void write(const std::vector<T> &v) {
+        writeVec(v);
+    }
 
     void writeChar(char c) { pc(c); }
 
@@ -252,5 +271,14 @@ struct FastIO {
     void writeYesNo(bool b, char end = '\n') {
         if (b) writeString("Yes", end);
         else   writeString("No", end);
+    }
+
+    template<class T>
+    void writeVec(const std::vector<T> &v, char end = '\0') {
+        for(auto it=v.begin();it!=v.end();++it){
+            write(*it);
+            if(it!=v.end()-1)write(' ');
+        }
+        if(end)pc(end);
     }
 };
