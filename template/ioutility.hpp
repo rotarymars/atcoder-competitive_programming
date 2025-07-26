@@ -3,6 +3,17 @@
 #include <iostream>
 #include <set>
 #include <vector>
+template<class T, class U>
+std::istream& operator>>(std::istream& is, std::pair<T, U>& p) {
+  is >> p.first >> p.second;
+  return is;
+}
+template<class T, class U>
+std::ostream& operator<<(std::ostream& os, const std::pair<T, U>& p) {
+  os << p.first << " " << p.second;
+  return os;
+}
+
 template<class T>
 std::istream& operator>>(std::istream& is, std::vector<T>& v) {
   for (T& x : v) is >> x;
@@ -10,7 +21,7 @@ std::istream& operator>>(std::istream& is, std::vector<T>& v) {
 }
 template<class T>
 std::ostream& operator<<(std::ostream& os, const std::vector<T>& v) {
-  for (class std::vector<T>::const_iterator it = v.begin(); it != v.end(); ++it) {
+  for (typename std::vector<T>::const_iterator it = v.begin(); it != v.end(); ++it) {
     os << *it;
     if (it != v.end() - 1) {
       os << " ";
@@ -46,17 +57,6 @@ inline std::ostream& operator<<(std::ostream& out, __int128 val) {
       }
   }
   return out;
-}
-
-template<class T, class U>
-std::istream& operator>>(std::istream& is, std::pair<T, U>& p) {
-  is >> p.first >> p.second;
-  return is;
-}
-template<class T, class U>
-std::ostream& operator<<(std::ostream& os, const std::pair<T, U>& p) {
-  os << p.first << " " << p.second;
-  return os;
 }
 
 template<class T>
