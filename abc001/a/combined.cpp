@@ -5,23 +5,31 @@
 #include <cstdio>
 #include <string>
 #include <type_traits>
+#include <vector>
 
 struct FastIO {
-  static constexpr size_t IN_BUF_SIZE = 1 << 10;
-  static constexpr size_t OUT_BUF_SIZE = 1 << 10;
+  static constexpr size_t IN_BUF_SIZE = 1 << 20;
+  static constexpr size_t OUT_BUF_SIZE = 1 << 20;
 
   FILE *in;
-  char inbuf[IN_BUF_SIZE];
+  char *inbuf;
   size_t in_idx, in_len;
 
   FILE *out;
-  char outbuf[OUT_BUF_SIZE];
+  char *outbuf;
   size_t out_idx;
 
   FastIO(FILE *_in = stdin, FILE *_out = stdout)
-      : in(_in), in_idx(0), in_len(0), out(_out), out_idx(0) {}
+      : in(_in), in_idx(0), in_len(0), out(_out), out_idx(0) {
+    inbuf = new char[IN_BUF_SIZE];
+    outbuf = new char[OUT_BUF_SIZE];
+  }
 
-  ~FastIO() { flush(); }
+  ~FastIO() {
+    flush();
+    delete[] inbuf;
+    delete[] outbuf;
+  }
 
   inline int gc() {
     if (in_idx >= in_len) {
@@ -78,6 +86,12 @@ struct FastIO {
   bool read(char &c) { return readChar(c); }
 
   bool read(std::string &s) { return readString(s); }
+
+  template <class T> bool read(std::vector<T> &v) { return readVec(v); }
+
+  template <class T, class U> bool read(std::pair<T, U> &p) {
+    return readPair(p);
+  }
 
   template <class T> bool readInt(T &out) {
     int c;
@@ -161,7 +175,7 @@ struct FastIO {
     do {
       s.push_back(static_cast<char>(c));
       c = gc();
-    } while (c > ' ');
+    } while (!isspace(c));
     return true;
   }
 
@@ -183,6 +197,42 @@ struct FastIO {
   }
 
   bool readChar(char &c) { return readCharRaw(c); }
+
+  template <class T> bool readVec(std::vector<T> &v) {
+    for (T &x : v) {
+      if (!read(x))
+        return false;
+    }
+    return true;
+  }
+
+  template <class T, class U> bool readPair(std::pair<T, U> &p) {
+    return read(p.first) && read(p.second);
+  }
+
+  void write(char c) { writeChar(c); }
+
+  void write(int i) { writeInt(i); }
+
+  void write(long l) { writeInt(l); }
+
+  void write(long long i) { writeInt(i); }
+
+  void write(double d) { writeDouble(d); }
+
+  void write(float f) { writeDouble(f); }
+
+  void write(long double ld) { writeDouble(ld); }
+
+  void write(const std::string &s) { writeString(s); }
+
+  void write(const char *s) { writeString(s); }
+
+  template <class T> void write(const std::vector<T> &v) { writeVec(v); }
+
+  template <class T, class U> void write(const std::pair<T, U> &p) {
+    writePair(p);
+  }
 
   void writeChar(char c) { pc(c); }
 
@@ -225,9 +275,10 @@ struct FastIO {
       pc(end);
   }
 
-  void writeDouble(double x, int precision = 10, char end = '\0') {
+  template <class T>
+  void writeDouble(T x, int precision = 10, char end = '\0') {
     char tmp[128];
-    int n = std::snprintf(tmp, sizeof(tmp), "%.*f", precision, x);
+    int n = std::snprintf(tmp, sizeof(tmp), "%.*Lf", precision, x);
     for (int i = 0; i < n; ++i)
       pc(tmp[i]);
     if (end)
@@ -240,14 +291,41 @@ struct FastIO {
     else
       writeString("No", end);
   }
+
+  template <class T> void writeVec(const std::vector<T> &v, char end = '\0') {
+    for (auto it = v.begin(); it != v.end(); ++it) {
+      write(*it);
+      if (it != v.end() - 1)
+        write(' ');
+    }
+    if (end)
+      pc(end);
+  }
+
+  template <class T, class U>
+  void writePair(const std::pair<T, U> &p, char end = '\0') {
+    write(p.first);
+    write(' ');
+    write(p.second);
+    if (end)
+      pc(end);
+  }
+
+  template <typename... Args> void write(Args &&...args) {
+    (write(std::forward<Args>(args)), ...);
+  }
+
+  // Variadic read function
+  template <typename... Args> bool read(Args &...args) {
+    return (... && read(args));
+  }
 };
 #line 2 "main.cpp"
 using namespace std;
 signed main() {
   FastIO io;
   int h1, h2;
-  io.read(h1);
-  io.read(h2);
-  io.writeInt(h1 - h2, '\n');
+  io.read(h1, h2);
+  io.write(h1 - h2, '\n');
   return 0;
 }
