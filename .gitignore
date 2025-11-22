@@ -7,5 +7,6 @@ tmp.cpp
 *.out
 test/
 *.o
-.direnv
+.direnv/
+node_modules
 
