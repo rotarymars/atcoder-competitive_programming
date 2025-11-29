@@ -561,13 +561,23 @@
       "id": "tessoku_book_ch",
       "label": "B09",
       "title": "Papers",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ch"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ch",
+      "directory": {
+        "path": "b09",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_cj",
       "label": "B11",
       "title": "Binary Search 2",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cj"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cj",
+      "directory": {
+        "path": "b11",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_ck",
