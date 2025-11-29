@@ -9,7 +9,12 @@
       "id": "tessoku_book_a",
       "label": "A01",
       "title": "The First Problem",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a",
+      "directory": {
+        "path": "a01",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_b",
@@ -682,7 +687,12 @@
       "id": "tessoku_book_cv",
       "label": "B23",
       "title": "Traveling Salesman Problem",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cv"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cv",
+      "directory": {
+        "path": "b23",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_cw",
