@@ -19,16 +19,16 @@
 		"scope": "cpp",
 		"prefix": "for",
 		"body": [
-			"for(${1:int} ${2:i}=${3:0};${2:i}<${4:n};++${2:i}){",
+			"for(${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:n}; ++${2:i}) {",
 			"  $0",
-      "}"
+			"}"
 		]
 	},
 	"reverse for": {
 		"scope": "cpp",
 		"prefix": "forr",
 		"body": [
-			"for(${1:int} ${2:i}=${3:n-1};${2:i}>=${4:0};--${2:i}){",
+			"for(${1:int} ${2:i} = ${3:n-1}; ${2:i} >= ${4:0}; --${2:i}){",
 			"  ${0}",
 			"}"
 		]
@@ -37,14 +37,14 @@
 		"scope": "cpp",
 		"prefix": "vcin",
 		"body": [
-			"for(auto&${1:i}:${2:v})cin>>${1};"
+			"for(auto &${1:i} : ${2:v}) cin>>${1};"
 		]
 	},
 	"if": {
 		"scope": "cpp",
 		"prefix": "if",
 		"body": [
-			"if(${1}){",
+			"if(${1}) {",
 			"  ${0}",
 			"}"
 		]
@@ -53,7 +53,7 @@
 		"scope": "cpp",
 		"prefix": "like",
 		"body": [
-			"if(${1})[[likely]]{",
+			"if(${1}) [[likely]] {",
 			"  ${0}",
 			"}"
 		]
@@ -62,7 +62,7 @@
 		"scope": "cpp",
 		"prefix": "unlike",
 		"body": [
-			"if(${1})[[unlikely]]{",
+			"if(${1}) [[unlikely]] {",
 			"  ${0}",
 			"}"
 		]
@@ -71,7 +71,7 @@
 		"scope": "cpp",
 		"prefix": "else",
 		"body": [
-			"else{",
+			"else {",
 			"  ${0}",
 			"}"
 		]
@@ -87,7 +87,7 @@
 		"scope": "cpp",
 		"prefix": "rfor",
 		"body": [
-			"for(auto&${1:i}:${2:v}){",
+			"for(auto &${1:i} : ${2:v}) {",
 			"  ${0}",
 			"}"
 		]
@@ -96,7 +96,7 @@
 		"scope": "cpp",
 		"prefix": "while",
 		"body": [
-			"while(${1}){",
+			"while(${1}) {",
 			"  ${0}",
 			"}"
 		]
@@ -105,14 +105,14 @@
 		"scope": "cpp",
 		"prefix": "vec",
 		"body": [
-			"vector<${1:int}>${2:v}(${3:n});"
+			"vector<${1:int}> ${2:v}(${3:n});"
 		]
 	},
 	"iterator all": {
 		"scope": "cpp",
 		"prefix": "itall",
 		"body": [
-			"${1:v}.begin(),${1}.end()"
+			"${1:v}.begin(), ${1}.end()"
 		]
 	}
 }
