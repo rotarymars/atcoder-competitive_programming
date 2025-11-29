@@ -9,12 +9,7 @@
       "id": "tessoku_book_a",
       "label": "A01",
       "title": "The First Problem",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a",
-      "directory": {
-        "path": "a01",
-        "testdir": "tests",
-        "submit": "combined.cpp"
-      }
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_a"
     },
     {
       "id": "tessoku_book_b",
