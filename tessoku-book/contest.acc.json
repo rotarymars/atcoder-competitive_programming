@@ -583,7 +583,12 @@
       "id": "tessoku_book_ck",
       "label": "B12",
       "title": "Equation",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ck"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ck",
+      "directory": {
+        "path": "b12",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_cl",
@@ -666,7 +671,12 @@
       "id": "tessoku_book_ct",
       "label": "B21",
       "title": "Longest Subpalindrome",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ct"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ct",
+      "directory": {
+        "path": "b21",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_cv",
