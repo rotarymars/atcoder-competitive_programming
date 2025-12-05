@@ -720,7 +720,12 @@
       "id": "tessoku_book_cz",
       "label": "B27",
       "title": "Calculate LCM",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cz"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cz",
+      "directory": {
+        "path": "b27",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "math_and_algorithm_ap",
