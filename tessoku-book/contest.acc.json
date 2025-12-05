@@ -219,7 +219,12 @@
       "id": "tessoku_book_z",
       "label": "A26",
       "title": "Prime Check",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_z"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_z",
+      "directory": {
+        "path": "a26",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "math_and_algorithm_o",
