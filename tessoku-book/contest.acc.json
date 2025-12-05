@@ -704,7 +704,12 @@
       "id": "tessoku_book_cy",
       "label": "B26",
       "title": "Output Prime Numbers",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cy"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_cy",
+      "directory": {
+        "path": "b26",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_cz",
