@@ -752,7 +752,12 @@
       "id": "tessoku_book_db",
       "label": "B29",
       "title": "Power Hard",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_db"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_db",
+      "directory": {
+        "path": "b29",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_dc",
