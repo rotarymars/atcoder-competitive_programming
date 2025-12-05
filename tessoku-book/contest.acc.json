@@ -241,7 +241,12 @@
       "id": "tessoku_book_ab",
       "label": "A28",
       "title": "Blackboard",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ab"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ab",
+      "directory": {
+        "path": "a28",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "math_and_algorithm_aq",
