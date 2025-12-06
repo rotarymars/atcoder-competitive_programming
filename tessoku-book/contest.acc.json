@@ -768,7 +768,12 @@
       "id": "tessoku_book_dc",
       "label": "B30",
       "title": "Combination 2",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dc"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dc",
+      "directory": {
+        "path": "b30",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_dd",
