@@ -274,7 +274,12 @@
       "id": "tessoku_book_ae",
       "label": "A31",
       "title": "Divisors",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ae"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_ae",
+      "directory": {
+        "path": "a31",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_af",
