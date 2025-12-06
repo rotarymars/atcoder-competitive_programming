@@ -784,7 +784,12 @@
       "id": "tessoku_book_dd",
       "label": "B31",
       "title": "Divisors Hard",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dd"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dd",
+      "directory": {
+        "path": "b31",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_de",
