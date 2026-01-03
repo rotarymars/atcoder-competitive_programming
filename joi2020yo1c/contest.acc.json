@@ -1,0 +1,32 @@
+{
+  "contest": {
+    "id": "joi2020yo1c",
+    "title": "JOI 2019/2020 一次予選 (第3回) 過去問",
+    "url": "https://atcoder.jp/contests/joi2020yo1c"
+  },
+  "tasks": [
+    {
+      "id": "joi2020_yo1c_a",
+      "label": "A",
+      "title": "X に最も近い値 (The Nearest Value)",
+      "url": "https://atcoder.jp/contests/joi2020yo1c/tasks/joi2020_yo1c_a"
+    },
+    {
+      "id": "joi2020_yo1c_b",
+      "label": "B",
+      "title": "キャピタリゼーション (Capitalization)",
+      "url": "https://atcoder.jp/contests/joi2020yo1c/tasks/joi2020_yo1c_b"
+    },
+    {
+      "id": "joi2020_yo1c_c",
+      "label": "C",
+      "title": "最長昇順連続部分列 (Longest Ascending Contiguous Subsequence)",
+      "url": "https://atcoder.jp/contests/joi2020yo1c/tasks/joi2020_yo1c_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    }
+  ]
+}

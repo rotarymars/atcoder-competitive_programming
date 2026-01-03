@@ -1,0 +1,332 @@
+{
+  "contest": {
+    "id": "APG4bPython",
+    "title": "Python入門 AtCoder Programming Guide for beginners (APG4bPython)",
+    "url": "https://atcoder.jp/contests/APG4bPython"
+  },
+  "tasks": [
+    {
+      "id": "APG4bPython_a",
+      "label": "A",
+      "title": "1.00.はじめに",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_a"
+    },
+    {
+      "id": "APG4bPython_b",
+      "label": "B",
+      "title": "1.01.出力とコメント",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_b"
+    },
+    {
+      "id": "APG4bPython_c",
+      "label": "C",
+      "title": "1.02.プログラムの書き方とエラー",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_c"
+    },
+    {
+      "id": "APG4bPython_d",
+      "label": "D",
+      "title": "1.03.四則演算と優先順位",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_d"
+    },
+    {
+      "id": "APG4bPython_e",
+      "label": "E",
+      "title": "1.04.変数と型",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_e"
+    },
+    {
+      "id": "APG4bPython_f",
+      "label": "F",
+      "title": "1.05.入力",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_f"
+    },
+    {
+      "id": "APG4bPython_g",
+      "label": "G",
+      "title": "1.06.if文・比較演算子・論理演算子",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_g"
+    },
+    {
+      "id": "APG4bPython_h",
+      "label": "H",
+      "title": "1.07.論理式の値とbool型",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_h"
+    },
+    {
+      "id": "APG4bPython_i",
+      "label": "I",
+      "title": "1.08.while文",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_i"
+    },
+    {
+      "id": "APG4bPython_j",
+      "label": "J",
+      "title": "1.09.for文・break・continue",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_j"
+    },
+    {
+      "id": "APG4bPython_k",
+      "label": "K",
+      "title": "1.10.リスト",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_k"
+    },
+    {
+      "id": "APG4bPython_l",
+      "label": "L",
+      "title": "1.11.文字列",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_l"
+    },
+    {
+      "id": "APG4bPython_m",
+      "label": "M",
+      "title": "1.12.組み込み関数",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_m"
+    },
+    {
+      "id": "APG4bPython_n",
+      "label": "N",
+      "title": "1.13.関数",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_n"
+    },
+    {
+      "id": "APG4bPython_o",
+      "label": "O",
+      "title": "2.00.第2章について",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_o"
+    },
+    {
+      "id": "APG4bPython_p",
+      "label": "P",
+      "title": "2.01.いろいろなfor文",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_p"
+    },
+    {
+      "id": "APG4bPython_q",
+      "label": "Q",
+      "title": "2.02.多重ループ",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_q"
+    },
+    {
+      "id": "APG4bPython_r",
+      "label": "R",
+      "title": "2.03.内包表記",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_r"
+    },
+    {
+      "id": "APG4bPython_s",
+      "label": "S",
+      "title": "2.04.多次元配列",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_s"
+    },
+    {
+      "id": "APG4bPython_t",
+      "label": "T",
+      "title": "2.05.再帰関数",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_t"
+    },
+    {
+      "id": "APG4bPython_u",
+      "label": "U",
+      "title": "2.06.計算量",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_u"
+    },
+    {
+      "id": "APG4bPython_v",
+      "label": "V",
+      "title": "3.00.第3章について",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_v"
+    },
+    {
+      "id": "APG4bPython_w",
+      "label": "W",
+      "title": "3.01.Pythonで使える機能の整理",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_w"
+    },
+    {
+      "id": "APG4bPython_x",
+      "label": "X",
+      "title": "3.02.組み込みコンテナ",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_x"
+    },
+    {
+      "id": "APG4bPython_y",
+      "label": "Y",
+      "title": "3.03.format と f 文字列",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_y"
+    },
+    {
+      "id": "APG4bPython_z",
+      "label": "Z",
+      "title": "3.04.ビット演算",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_z"
+    },
+    {
+      "id": "APG4bPython_aa",
+      "label": "AA",
+      "title": "3.05.発展的な文法",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_aa"
+    },
+    {
+      "id": "APG4bPython_ab",
+      "label": "AB",
+      "title": "3.06.いろいろなソート",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ab"
+    },
+    {
+      "id": "APG4bPython_ac",
+      "label": "AC",
+      "title": "4.00.第4章について(準備中)",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ac"
+    },
+    {
+      "id": "APG4bPython_ak",
+      "label": "AP1",
+      "title": "付録1.コードテストの使い方",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ak"
+    },
+    {
+      "id": "APG4bPython_al",
+      "label": "AP2",
+      "title": "付録2.提出結果の見方",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_al"
+    },
+    {
+      "id": "APG4bPython_cv",
+      "label": "EX1",
+      "title": "コードテストと出力の練習",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cv"
+    },
+    {
+      "id": "APG4bPython_cu",
+      "label": "EX2",
+      "title": "エラーの修正",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cu"
+    },
+    {
+      "id": "APG4bPython_ct",
+      "label": "EX3",
+      "title": " 計算問題",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ct"
+    },
+    {
+      "id": "APG4bPython_cs",
+      "label": "EX4",
+      "title": "◯年は何秒？",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cs"
+    },
+    {
+      "id": "APG4bPython_cr",
+      "label": "EX5",
+      "title": "A足すB問題",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cr"
+    },
+    {
+      "id": "APG4bPython_cq",
+      "label": "EX6",
+      "title": "電卓をつくろう",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cq"
+    },
+    {
+      "id": "APG4bPython_cp",
+      "label": "EX7",
+      "title": "bool値パズル",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cp"
+    },
+    {
+      "id": "APG4bPython_co",
+      "label": "EX8",
+      "title": "たくさんのA足すB問題",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_co",
+      "directory": {
+        "path": "ex8",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "APG4bPython_cn",
+      "label": "EX9",
+      "title": "電卓をつくろう2",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cn"
+    },
+    {
+      "id": "APG4bPython_cm",
+      "label": "EX10",
+      "title": "平均との差",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cm"
+    },
+    {
+      "id": "APG4bPython_cl",
+      "label": "EX11",
+      "title": "足したり引いたり",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cl"
+    },
+    {
+      "id": "APG4bPython_ck",
+      "label": "EX12",
+      "title": "最速のランナーを見つけよう",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ck"
+    },
+    {
+      "id": "APG4bPython_cj",
+      "label": "EX13",
+      "title": "三人兄弟へのプレゼント",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cj"
+    },
+    {
+      "id": "APG4bPython_ci",
+      "label": "EX14",
+      "title": "隣り合う同じ値を探す",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ci"
+    },
+    {
+      "id": "APG4bPython_ch",
+      "label": "EX15",
+      "title": "果物屋さんでお買い物",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ch"
+    },
+    {
+      "id": "APG4bPython_cg",
+      "label": "EX16",
+      "title": "英単語テスト対策",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cg"
+    },
+    {
+      "id": "APG4bPython_cf",
+      "label": "EX17",
+      "title": "ゲーム大会",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cf"
+    },
+    {
+      "id": "APG4bPython_ce",
+      "label": "EX18",
+      "title": "報告書の枚数",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ce"
+    },
+    {
+      "id": "APG4bPython_cd",
+      "label": "EX19",
+      "title": "計算量の見積もり",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cd"
+    },
+    {
+      "id": "APG4bPython_cc",
+      "label": "EX20",
+      "title": "最頻値",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cc"
+    },
+    {
+      "id": "APG4bPython_cb",
+      "label": "EX21",
+      "title": "Bitwise Exclusive Or",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_cb"
+    },
+    {
+      "id": "APG4bPython_ca",
+      "label": "EX22",
+      "title": "2つ目の値でソート",
+      "url": "https://atcoder.jp/contests/APG4bPython/tasks/APG4bPython_ca"
+    }
+  ]
+}
