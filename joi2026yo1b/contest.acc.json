@@ -1,0 +1,38 @@
+{
+  "contest": {
+    "id": "joi2026yo1b",
+    "title": "JOI 2025/2026 一次予選 (第2回) 過去問",
+    "url": "https://atcoder.jp/contests/joi2026yo1b"
+  },
+  "tasks": [
+    {
+      "id": "joi2026_yo1b_a",
+      "label": "A",
+      "title": "宿題 2 (Homework 2)",
+      "url": "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2026_yo1b_b",
+      "label": "B",
+      "title": "帰省 2 (Homecoming 2)",
+      "url": "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_b"
+    },
+    {
+      "id": "joi2026_yo1b_c",
+      "label": "C",
+      "title": "葵とIOI (Aoi and IOI)",
+      "url": "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_c"
+    },
+    {
+      "id": "joi2026_yo1b_d",
+      "label": "D",
+      "title": "距離 (Distance)",
+      "url": "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_d"
+    }
+  ]
+}

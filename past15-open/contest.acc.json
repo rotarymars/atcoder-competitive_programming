@@ -20,7 +20,12 @@
       "id": "past202306_b",
       "label": "B",
       "title": "Hall of Fame",
-      "url": "https://atcoder.jp/contests/past15-open/tasks/past202306_b"
+      "url": "https://atcoder.jp/contests/past15-open/tasks/past202306_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "past202306_c",

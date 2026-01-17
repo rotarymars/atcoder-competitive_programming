@@ -9,7 +9,12 @@
       "id": "joi2025_yo1a_a",
       "label": "A",
       "title": "鉛筆 2 (Pencils 2)",
-      "url": "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_a"
+      "url": "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "joi2025_yo1a_b",
