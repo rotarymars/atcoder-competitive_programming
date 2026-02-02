@@ -1,0 +1,13 @@
+[project]
+name = "atcoder-competitive-programming"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "online-judge-tools",
+    "yapf>=0.43.0",
+]
+
+[tool.uv.sources]
+online-judge-tools = { git = "https://github.com/rotarymars/oj.git" }
