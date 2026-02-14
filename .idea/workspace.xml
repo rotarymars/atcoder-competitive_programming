@@ -31,8 +31,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71c42c01-c6fe-435e-ba78-904b55482b72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc440/contest.acc.json" beforeDir="false" afterPath="$PROJECT_DIR$/abc440/contest.acc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abc442/contest.acc.json" beforeDir="false" afterPath="$PROJECT_DIR$/abc442/contest.acc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template" beforeDir="false" afterPath="$PROJECT_DIR$/template" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/inverse_element.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/template/inverse_element.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,11 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ex10" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dummy" TARGET_NAME="ex10" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dummy" RUN_TARGET_NAME="ex10">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -109,7 +115,7 @@
       <workItem from="1770471391883" duration="2316000" />
       <workItem from="1770784518626" duration="12000" />
       <workItem from="1771035706629" duration="8119000" />
-      <workItem from="1771063599626" duration="3675000" />
+      <workItem from="1771063599626" duration="10960000" />
     </task>
     <servers />
   </component>
