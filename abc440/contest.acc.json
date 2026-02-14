@@ -9,7 +9,12 @@
       "id": "abc440_a",
       "label": "A",
       "title": "Octave",
-      "url": "https://atcoder.jp/contests/abc440/tasks/abc440_a"
+      "url": "https://atcoder.jp/contests/abc440/tasks/abc440_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "abc440_b",
