@@ -368,12 +368,13 @@ struct FastIO {
       pc(end);
   }
 };
-#line 2 "main.cpp"
+#line 2 "/tmp/expander-test/test.cpp"
+#include <vector>
 using namespace std;
-signed main() {
-  FastIO io;
-  int n;
-  io.read(n);
-  io.write(n * (n + 1) / 2, '\n');
-  return 0;
+int main() {
+    FastIO io;
+    int n;
+    io.read(n);
+    io.writeln(n);
+    return 0;
 }
