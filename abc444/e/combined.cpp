@@ -1,6 +1,6 @@
 #include <set>
 #include <vector>
-#line 1 "/home/rotarymars/projects/personal/atcoder-competitive_programming/template/fastio.hpp"
+#line 1 "/home/runner/work/atcoder-competitive_programming/atcoder-competitive_programming/template/fastio.hpp"
 #include <cctype>
 #include <cmath>
 #include <cstdint>
@@ -371,7 +371,7 @@ struct FastIO {
   }
 };
 #line 4 "main.cpp"
-#line 1 "/home/rotarymars/projects/personal/atcoder-competitive_programming/template/combinations.hpp"
+#line 1 "/home/runner/work/atcoder-competitive_programming/atcoder-competitive_programming/template/combinations.hpp"
 #ifndef __ROTARYMARS__COMBINATIONS__
 #define __ROTARYMARS__COMBINATIONS__
 template <class T> T COMBINATIONS(T a, T b) {
@@ -392,7 +392,7 @@ signed main() {
   io.read(n, d);
   vector<long long> v(n);
   io.read(v);
-  set<long long> se;
+  multiset<long long> se;
   long long ans = 0;
   int l = 0;
   auto conflicts = [&](int i) -> bool {
@@ -405,7 +405,7 @@ signed main() {
   };
   for (int r = 0; r < n; ++r) {
     while (conflicts(r)) {
-      se.erase(v[l]);
+      se.erase(se.find(v[l]));
       ++l;
     }
     se.insert(v[r]);
