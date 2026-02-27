@@ -26,7 +26,12 @@
       "id": "abc439_c",
       "label": "C",
       "title": "2026",
-      "url": "https://atcoder.jp/contests/abc439/tasks/abc439_c"
+      "url": "https://atcoder.jp/contests/abc439/tasks/abc439_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "abc439_d",
