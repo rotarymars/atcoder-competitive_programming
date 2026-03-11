@@ -1,0 +1,1 @@
+/home/runner/work/atcoder-competitive_programming/.codeql-scratch/dbs/cpp/working/autobuild/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex10.dir/link.d CMakeFiles/ex10.dir/APG4b/ex10/main.cpp.o -o ex10
