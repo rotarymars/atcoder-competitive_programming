@@ -1,0 +1,56 @@
+{
+  "contest": {
+    "id": "abc448",
+    "title": "AtCoder Beginner Contest 448",
+    "url": "https://atcoder.jp/contests/abc448"
+  },
+  "tasks": [
+    {
+      "id": "abc448_a",
+      "label": "A",
+      "title": "chmin",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_a"
+    },
+    {
+      "id": "abc448_b",
+      "label": "B",
+      "title": "Pepper Addiction",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_b"
+    },
+    {
+      "id": "abc448_c",
+      "label": "C",
+      "title": "Except and Min",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "abc448_d",
+      "label": "D",
+      "title": "Integer-duplicated Path",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_d"
+    },
+    {
+      "id": "abc448_e",
+      "label": "E",
+      "title": "Simple Division",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_e"
+    },
+    {
+      "id": "abc448_f",
+      "label": "F",
+      "title": "Authentic Traveling Salesman Problem",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_f"
+    },
+    {
+      "id": "abc448_g",
+      "label": "G",
+      "title": "Conquest",
+      "url": "https://atcoder.jp/contests/abc448/tasks/abc448_g"
+    }
+  ]
+}

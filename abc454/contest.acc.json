@@ -37,7 +37,12 @@
       "id": "abc454_d",
       "label": "D",
       "title": "(xx)",
-      "url": "https://atcoder.jp/contests/abc454/tasks/abc454_d"
+      "url": "https://atcoder.jp/contests/abc454/tasks/abc454_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "abc454_e",
