@@ -26,7 +26,12 @@
       "id": "abc437_c",
       "label": "C",
       "title": "Reindeer and Sleigh 2",
-      "url": "https://atcoder.jp/contests/abc437/tasks/abc437_c"
+      "url": "https://atcoder.jp/contests/abc437/tasks/abc437_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "abc437_d",
