@@ -26,7 +26,12 @@
       "id": "abc422_c",
       "label": "C",
       "title": "AtCoder AAC Contest",
-      "url": "https://atcoder.jp/contests/abc422/tasks/abc422_c"
+      "url": "https://atcoder.jp/contests/abc422/tasks/abc422_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "abc422_d",
