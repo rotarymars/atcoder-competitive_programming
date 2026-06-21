@@ -1,10 +1,11 @@
-#line 1 "/home/rotarymars/projects/personal/atcoder-competitive_programming/template/fastio.hpp"
+#line 1 "/home/runner/work/atcoder-competitive_programming/atcoder-competitive_programming/template/fastio.hpp"
 #include <cctype>
 #include <cmath>
 #include <cstdint>
 #include <cstdio>
 #include <string>
 #include <type_traits>
+#include <utility>
 #include <vector>
 
 struct FastIO {
@@ -71,11 +72,19 @@ struct FastIO {
     }
   }
 
+  // ── Read overloads ──
+
   bool read(int &i) { return readInt(i); }
 
   bool read(long &l) { return readInt(l); }
 
   bool read(long long &i) { return readInt(i); }
+
+  bool read(unsigned int &i) { return readInt(i); }
+
+  bool read(unsigned long &l) { return readInt(l); }
+
+  bool read(unsigned long long &i) { return readInt(i); }
 
   bool read(double &d) { return readDouble(d); }
 
@@ -93,13 +102,18 @@ struct FastIO {
     return readPair(p);
   }
 
+  template <typename T1, typename T2, typename... Rest>
+  bool read(T1 &first, T2 &second, Rest &...rest) {
+    return read(first) && read(second, rest...);
+  }
+
   template <class T> bool readInt(T &out) {
     int c;
     if (!skipSpaces(c))
       return false;
-    T sign = 1;
+    bool neg = false;
     if (c == '-') {
-      sign = -1;
+      neg = true;
       c = gc();
     }
     T val = 0;
@@ -107,7 +121,11 @@ struct FastIO {
       val = val * 10 + (c - '0');
       c = gc();
     }
-    out = val * sign;
+    if constexpr (std::is_signed<T>::value) {
+      out = neg ? -val : val;
+    } else {
+      out = val;
+    }
     return true;
   }
 
@@ -196,7 +214,13 @@ struct FastIO {
     return true;
   }
 
-  bool readChar(char &c) { return readCharRaw(c); }
+  bool readChar(char &c) {
+    int x;
+    if (!skipSpaces(x))
+      return false;
+    c = static_cast<char>(x);
+    return true;
+  }
 
   template <class T> bool readVec(std::vector<T> &v) {
     for (T &x : v) {
@@ -210,7 +234,11 @@ struct FastIO {
     return read(p.first) && read(p.second);
   }
 
+  // ── Single-argument write overloads (non-template, exact match) ──
+
   void write(char c) { writeChar(c); }
+
+  void write(bool b) { pc(b ? '1' : '0'); }
 
   void write(int i) { writeInt(i); }
 
@@ -218,23 +246,49 @@ struct FastIO {
 
   void write(long long i) { writeInt(i); }
 
+  void write(unsigned int i) { writeInt(i); }
+
+  void write(unsigned long l) { writeInt(l); }
+
+  void write(unsigned long long i) { writeInt(i); }
+
   void write(double d) { writeDouble(d); }
 
   void write(float f) { writeDouble(f); }
 
   void write(long double ld) { writeDouble(ld); }
 
-  void write(const std::string &s) { writeString(s); }
+  void write(const std::string &s) {
+    for (char c : s)
+      pc(c);
+  }
 
-  void write(const char *s) { writeString(s); }
+  void write(const char *s) {
+    while (*s)
+      pc(*s++);
+  }
 
   template <class T> void write(const std::vector<T> &v) { writeVec(v); }
-
-  template <class T> void write(std::vector<T> &&v) { writeVec(v); }
 
   template <class T, class U> void write(const std::pair<T, U> &p) {
     writePair(p);
   }
+
+  // ── Variadic write: two or more arguments ──
+
+  template <typename T1, typename T2, typename... Rest>
+  void write(const T1 &first, const T2 &second, const Rest &...rest) {
+    write(first);
+    write(second);
+    (write(rest), ...);
+  }
+
+  template <typename... Args> void writeln(const Args &...args) {
+    write(args...);
+    pc('\n');
+  }
+
+  // ── Underlying write helpers ──
 
   void writeChar(char c) { pc(c); }
 
@@ -280,7 +334,8 @@ struct FastIO {
   template <class T>
   void writeDouble(T x, int precision = 10, char end = '\0') {
     char tmp[128];
-    int n = std::snprintf(tmp, sizeof(tmp), "%.*Lf", precision, x);
+    int n = std::snprintf(tmp, sizeof(tmp), "%.*Lf", precision,
+                          static_cast<long double>(x));
     for (int i = 0; i < n; ++i)
       pc(tmp[i]);
     if (end)
@@ -311,15 +366,6 @@ struct FastIO {
     write(p.second);
     if (end)
       pc(end);
-  }
-
-  template <typename... Args> void write(Args &&...args) {
-    (write(std::forward<Args>(args)), ...);
-  }
-
-  // Variadic read function
-  template <typename... Args> bool read(Args &...args) {
-    return (... && read(args));
   }
 };
 #line 2 "main.cpp"
