@@ -447,7 +447,12 @@
       "id": "tessoku_book_bi",
       "label": "A61",
       "title": "Adjacent Vertices",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bi"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bi",
+      "directory": {
+        "path": "a61",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "math_and_algorithm_am",
