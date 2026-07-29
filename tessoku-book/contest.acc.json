@@ -873,7 +873,12 @@
       "id": "tessoku_book_dx",
       "label": "B51",
       "title": "Bracket",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dx"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_dx",
+      "directory": {
+        "path": "b51",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_dy",
@@ -891,7 +896,12 @@
       "id": "tessoku_book_eb",
       "label": "B55",
       "title": "Difference",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_eb"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_eb",
+      "directory": {
+        "path": "b55",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_ec",
