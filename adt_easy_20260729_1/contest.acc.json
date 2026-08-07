@@ -1,0 +1,44 @@
+{
+  "contest": {
+    "id": "adt_easy_20260729_1",
+    "title": "AtCoder Daily Training EASY 2026/07/29 16:00start",
+    "url": "https://atcoder.jp/contests/adt_easy_20260729_1"
+  },
+  "tasks": [
+    {
+      "id": "abc392_a",
+      "label": "A",
+      "title": "Shuffled Equation",
+      "url": "https://atcoder.jp/contests/adt_easy_20260729_1/tasks/abc392_a"
+    },
+    {
+      "id": "abc255_a",
+      "label": "B",
+      "title": "You should output ARC, though this is ABC.",
+      "url": "https://atcoder.jp/contests/adt_easy_20260729_1/tasks/abc255_a"
+    },
+    {
+      "id": "abc303_b",
+      "label": "C",
+      "title": "Discord",
+      "url": "https://atcoder.jp/contests/adt_easy_20260729_1/tasks/abc303_b"
+    },
+    {
+      "id": "abc326_b",
+      "label": "D",
+      "title": "326-like Numbers",
+      "url": "https://atcoder.jp/contests/adt_easy_20260729_1/tasks/abc326_b"
+    },
+    {
+      "id": "abc464_c",
+      "label": "E",
+      "title": "Plumage Palette",
+      "url": "https://atcoder.jp/contests/adt_easy_20260729_1/tasks/abc464_c",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    }
+  ]
+}
