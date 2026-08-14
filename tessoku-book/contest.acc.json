@@ -482,7 +482,12 @@
       "id": "tessoku_book_bn",
       "label": "A66",
       "title": "Connect Query",
-      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bn"
+      "url": "https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bn",
+      "directory": {
+        "path": "a66",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
     },
     {
       "id": "tessoku_book_bo",
