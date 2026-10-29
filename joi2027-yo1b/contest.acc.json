@@ -1,0 +1,75 @@
+{
+  "contest": {
+    "id": "joi2027-yo1b",
+    "title": "JOI 2026/2027 一次予選 (第2回:10月25日(日))",
+    "url": "https://atcoder.jp/contests/joi2027-yo1b"
+  },
+  "tasks": [
+    {
+      "id": "joi2027_yo1b_a",
+      "label": "A",
+      "title": "かるた (Karuta)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_a",
+      "directory": {
+        "path": "a",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2027_yo1b_b",
+      "label": "B",
+      "title": "けんけんぱ (KenKenPa)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_b",
+      "directory": {
+        "path": "b",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2027_yo1b_c",
+      "label": "C",
+      "title": "ジェットコースター (Roller Coaster)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2027_yo1b_d",
+      "label": "D",
+      "title": "ペア (Pairs)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2027_yo1b_e",
+      "label": "E",
+      "title": "文字列を探せ (Find The String)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_e",
+      "directory": {
+        "path": "e",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    },
+    {
+      "id": "joi2027_yo1b_f",
+      "label": "F",
+      "title": "ペア 2 (Pairs 2)",
+      "url": "https://atcoder.jp/contests/joi2027-yo1b/tasks/joi2027_yo1b_f",
+      "directory": {
+        "path": "f",
+        "testdir": "tests",
+        "submit": "combined.cpp"
+      }
+    }
+  ]
+}
